@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
 
 <head>
@@ -30,7 +30,8 @@
                 Disse værdier kan være af forskellige typer, såsom tal, tekst eller endda andre arrays. Arrays er
                 defineret
                 ved at
-                placere værdierne inde i square brackets [], adskilt af kommaer.
+                placere værdierne inde i square brackets [] (Marie-Pierres kursusnotater: firkantede parenteser), adskilt af kommaer.
+                <!-- square brackets = kantede parenteser eller firkantede parenteser -->
                 <br>
                 For eksempel:
             </p>
@@ -63,22 +64,24 @@
                 arbejde med arrays på en enklere og mere effektiv måde. Nogle af de mest almindelige array funktioner
                 omfatter:</p>
             <ul>
+                <!-- push() and pop() kind of are the opposite of each other -->
                 <li><code>.push()</code>: Tilføjer et element til enden af et array</li>
                 <li><code>.pop()</code>: Fjerner det sidste element i et array</li>
-                <li><code>.shift()</code>: Fjerner det første element i et array</li>
+                <!-- unshift() and shift() kind of are the opposite of each other; the pair is the opposite of push() and pop() -->
                 <li><code>.unshift()</code>: Tilføjer et element til begyndelsen af et array</li>
-                <li><code>.splice()</code>: Tilføjer eller fjerner et eller flere elementer fra et array på et specifikt
-                    index</li>
+                <li><code>.shift()</code>: Fjerner det første element i et array</li>
+                <!-- slice() and splice() are to a degree the opposite of each other -->
+                <li><code>.splice()</code>: Tilføjer eller fjerner et eller flere elementer fra et array på et specifikt index</li>
                 <li><code>.slice()</code>: Skærer et stykke ud af et array og returnerer det som en ny array</li>
+                <!-- concat() merges things (compare to push, unshift and splice) -->
                 <li><code>.concat()</code>: Sammenfletter to eller flere arrays til en enkelt array</li>
+                <!-- sort() and reverse() were in the presentation about concat() and filter() -->
                 <li><code>.sort()</code>: Sorter elementerne i et array</li>
                 <li><code>.reverse()</code>: Vender rækkefølgen af elementerne i et array på hovedet</li>
-                <li><code>.map()</code>: Kører en funktion for hvert element i et array og returnerer et nyt array med
-                    de
-                    returnerede værdier</li>
-                <li><code>.filter()</code>: Filtrerer elementerne i et array baseret på en bestemt betingelse og
-                    returnerer
-                    en ny array med de matchende værdier</li>
+                <li><code>.filter()</code>: Filtrerer elementerne i et array baseret på en bestemt betingelse og returnerer en ny array med de matchende værdier</li>
+                <!-- foreach() and map() are similar, but map() allows for changes in the array -->
+                <li><code>.foreach()</code>: Marie-Pierres kursusnotater: hurtigere end .map() og mindre risikofyldt end en generisk "for statement", som er endnu langsommere og kan eventuelt køre for evigt (en "infinite loop") (bemærk, at en "for statement" ikke er en "array method", dvs. en metode, som udelukkende er til arrays)</li>
+                <li><code>.map()</code>: Kører en funktion for hvert element i et array og returnerer et nyt array med de returnerede værdier</li>
             </ul>
             <p>Disse funktioner kan være meget nyttige i udvikling af JavaScript-applikationer, da de gør det muligt at
                 effektivt håndtere og transformere data i arrays.</p>
@@ -142,7 +145,7 @@
 
     <footer>
         <article class="footerInfo">
-            Bo Nicolaisen
+            <p>© Kernedokument af Bo Nicolaisen, underviser; ændringer af Marie-Pierre Lessard.</p>
         </article>
     </footer>
 
